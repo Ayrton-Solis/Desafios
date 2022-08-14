@@ -1,0 +1,20 @@
+[
+  {
+    "title": "botella",
+    "price": 150,
+    "thumbnail": "https://picsum.photos/200",
+    "id": 1
+  },
+  {
+    "title": "taza",
+    "price": 124,
+    "thumbnail": "https://picsum.photos/200",
+    "id": 2
+  },
+  {
+    "title": "vaso",
+    "price": 123,
+    "thumbnail": "https://picsum.photos/200",
+    "id": 3
+  }
+]
