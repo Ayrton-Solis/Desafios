@@ -4,7 +4,7 @@ const express = require('express');
 const { json } = require('express');
 const app = express();
 const listaDeProductos = new contenedor('./productos.txt')
-//Servidor
+
 const port = process.env.port || 8080;
 
 app.get('/productos', async (req, res) => {
