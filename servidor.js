@@ -1,7 +1,6 @@
 const { promises: fs } = require('fs');
 const contenedor = require('./Functions')
 const express = require('express');
-const { json } = require('express');
 const app = express();
 const listaDeProductos = new contenedor('./productos.txt')
 
