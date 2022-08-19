@@ -16,7 +16,6 @@ class apiProducts {
         return this.id;
     }
     updateProduct(id, prod){
-        const product = this.products.find(e => e.id === id);
         
     }
 }
