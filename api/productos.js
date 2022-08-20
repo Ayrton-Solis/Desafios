@@ -16,6 +16,23 @@ class apiProducts {
         return this.id;
     }
     updateProduct(id, prod){
-        
+        const newProd = {...prod , id: Number(id)}
+        const index = this.products.findIndex(e => e.id === id);
+        if (index == -1) {
+            return { error: 'Error: Producto no encontrado' }
+        } else {
+            this.products.splice(index, 1, newProd);
+            return newProd
+        }
     }
-}
+    deleteProduct(id){
+        const index = this.products.findIndex(e => e.id === id);
+        if (index == -1) {
+            return { error: 'Error: Producto no encontrado '}
+        } else {
+            this.products.splice(index, 1);
+        }
+    }
+};
+
+export default apiProducts
